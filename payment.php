@@ -57,8 +57,7 @@ h1 {
 }
 
 body {
-    background: #222D32;
-    font-family: 'Roboto', sans-serif;
+    background: #fff;
 }
 
 textarea:focus, 
@@ -92,7 +91,7 @@ input[type=number]:focus,
 	<div class="container-fluid py-3">
     <div class="row">
         <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-auto">
-          <h1 class="text-center text-light">PAY INVOICE</h1>
+          <h1 class="text-center ">PAY INVOICE</h1>
             <div id="pay-invoice" class="card">
                 <div class="card-body">
             <label for="fname">Accepted Cards</label>

@@ -16,8 +16,8 @@ h1{
 	text-align:center;
 }
 body {
-    background: #222D32;
-    font-family: 'Roboto', sans-serif;
+    background: #fff;
+
 }
 th {
   font-size: 22px;
@@ -54,7 +54,7 @@ td {
             }
             ?>
           <div class="container-md mt-2">
-            <h1 class="display-4 text-center text-light"
+            <h1 class="display-4 text-center "
               >FLIGHTS FROM: <br> <?php echo $dep_city; ?> 
                  to <?php echo $arr_city; ?> </h1>
             <table class="table table-striped table-bordered table-hover">
