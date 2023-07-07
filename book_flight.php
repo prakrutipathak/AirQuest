@@ -7,10 +7,7 @@ require 'helpers/conn.php';
 table {
   background-color: white;
 }
-@font-face {
-  font-family: 'product sans';
-  src: url('assets/css/Product Sans Bold.ttf');
-}
+
 h1{
     font-family :'product sans' !important;
 	color:#424242 ;
@@ -19,27 +16,25 @@ h1{
 	text-align:center;
 }
 body {
-  background: #bdc3c7;  
-  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #222D32;
+    font-family: 'Roboto', sans-serif;
 }
 th {
   font-size: 22px;
-  /* font-family: 'Courier New', Courier, monospace; */
+ 
 }
 td {
   margin-top: 10px !important;
   font-size: 16px;
   font-weight: bold;
-  /* color: #3931af; */
+  
   color: #424242;
 }
 </style>
     <main>
         <?php if(isset($_POST['search_but'])) { 
             $dep_date = $_POST['dep_date'];                        
-            // $ret_date = $_POST['ret_date'];  
+           
             $dep_city = $_POST['dep_city'];  
             $arr_city = $_POST['arr_city'];     
             $type = $_POST['type'];
@@ -125,7 +120,7 @@ td {
                       <input name='type' type='hidden' value=".$type.">
                       <input name='passengers' type='hidden' value=".$passengers.">
                       <input name='price' type='hidden' value=".$price.">
-                     
+                      <input name='ret_date' type='hidden' value=".$ret_date.">
                       <input name='class' type='hidden' value=".$f_class.">
                       <button name='book_but' type='submit' 
                       class='btn btn-success mt-0'>

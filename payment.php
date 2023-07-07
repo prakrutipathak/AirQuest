@@ -1,4 +1,4 @@
-<?php include_once 'helpers/helper.php'; ?>
+<?php include_once 'helpers/helper.php'; ?> 
 <?php subview('header.php'); ?>
 <link rel="stylesheet" href="assets/css/form.css">
 <style>
@@ -57,10 +57,8 @@ h1 {
 }
 
 body {
-  background: #bdc3c7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #222D32;
+    font-family: 'Roboto', sans-serif;
 }
 
 textarea:focus, 
@@ -105,7 +103,7 @@ input[type=number]:focus,
               <i class="fa fa-cc-discover fa-3x" style="color:orange;"></i>
                <i class="fa fa-cc-stripe fa-3x" style="color:blue;"></i>
             </div>
-            <hr>
+            <hr> 
             <form action="includes/payment.inc.php" method="post" 
                 novalidate="novalidate" class="needs-validation">
   
@@ -127,10 +125,10 @@ input[type=number]:focus,
                         <div class="row">
                             <div class="col pr-0">
                                 <input id="x_card_code" name="x_card_code" type="password" class="form-control cc-cvc" required autocomplete="off">
-                            </div>
+                            </div> 
                             <div class="col pr-0">                            
                                 <span class="invalid-feedback order-last">Enter the 3-digit code on back</span>
-                                <div class="input-group-append">
+                                <div class="input-group-append"> 
                                     <div class="input-group-text">
                                     <span class="fa fa-question-circle fa-lg" data-toggle="popover" data-container="body" data-html="true" data-title="CVV" 
                                     data-content="<div class='text-center one-card'>The 3 digit code on back of the card..<div class='visa-mc-cvc-preview'></div></div>"
@@ -144,7 +142,7 @@ input[type=number]:focus,
                 
                 <br/>
 
-                <div class='form-row'>
+                <div class='form-row'> 
                 <div class='col-md-12 mb-2'>
                     <button id="payment-button" type="submit"  name="pay_but"
                     class="btn btn-lg btn-primary btn-block">

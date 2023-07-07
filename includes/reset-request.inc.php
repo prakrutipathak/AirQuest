@@ -7,8 +7,9 @@ if(isset($_POST['reset-req-submit'])) {
     require '../helpers/conn.php';   
     $selector = bin2hex(random_bytes(8));
     $token = random_bytes(32);
-    $url = 'https://secret-journey-48226.herokuapp.com/views/create-new-pwd.php?selector='.$selector.'&validator='
-        .bin2hex($token);
+    $url = 'https://airquest.000webhostapp.com/path/to/create-new-pwd.php?selector='.$selector.'&validator='
+    .bin2hex($token);
+;
     $expires = date('U')+1800;
     $user_email = $_POST['user_email'];
     if(!filter_var($user_email,FILTER_VALIDATE_EMAIL)) {
@@ -50,8 +51,8 @@ if(isset($_POST['reset-req-submit'])) {
         $mail->SMTPSecure = "tls";
         $mail->Port       = 587;
         $mail->Host       = "smtp.gmail.com";
-        $mail->Username   = "digique0@gmail.com";
-        $mail->Password   = "ylzmrytoovcrjzqt";
+        $mail->Username   = "snency16@gmail.com";
+        $mail->Password   = "elidpxvbkzqairbg";
         $mail->IsHTML(true);
         $mail->SetFrom('test@gmail.com');
         $mail->AddAddress($user_email);    
@@ -66,8 +67,7 @@ if(isset($_POST['reset-req-submit'])) {
         $mail->Send();
         header('Location: ../reset-pwd.php?mail=success');       
     } 
-    catch(Exception $e) {        
-        // echo $mail->ErrorInfo;
+    catch(Exception $e) {      
         header('Location: ../reset-pwd.php?err=mailerr');      
     }
    

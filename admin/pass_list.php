@@ -1,4 +1,4 @@
-<?php include_once 'header.php'; ?>
+<?php include_once 'header.php'; ?> 
 <?php include_once 'footer.php';
 require '../helpers/conn.php';?>
 <style>
@@ -13,7 +13,8 @@ h1 {
   font-weight: lighter;
 }
 body {
-  background-color: #efefef;
+    background: #222D32;
+    font-family: 'Roboto', sans-serif;
 }
 th {
   font-size: 22px;
@@ -33,7 +34,7 @@ td {
             <table class="table table-bordered">
               <thead class="thead-dark">
                 <tr>
-                  <th>#</th>
+                  <th>#</th> 
                   <th scope="col">First Name</th>
                   <th scope="col">Middle Name</th>
                   <th scope="col">Last Name</th>
@@ -105,4 +106,4 @@ td {
           </div>
         <?php } ?>
 
-    </main>
+    </main> 

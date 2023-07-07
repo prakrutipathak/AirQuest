@@ -11,7 +11,7 @@ session_start();
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/44f557ccce.js"></script>
-        <title>Online Flight Booking</title>          
+        <title>AirQuest</title>          
         <link rel = "icon" href =  
             "../assets/images/brand.png" 
         type = "image/x-icon">          
@@ -22,7 +22,7 @@ session_start();
   src: url('../assets/css/Product Sans Bold.ttf');
 }
 button.btn-outline-light:hover {
-  color: cornflowerblue !important;
+  color: #000 !important;
 }
   .navbar-custom {
     background-color: #3a3a3a;

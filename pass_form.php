@@ -59,6 +59,7 @@ body {
     $price = $_POST['price'];
     $class = $_POST['class'];
     $type = $_POST['type'];
+    $ret_date = $_POST['ret_date'];
     
 ?>    
 <main>

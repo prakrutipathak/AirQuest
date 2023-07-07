@@ -4,14 +4,18 @@
 	?> 	
 <style>
 
+footer {
+  
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            
+}
 form.logout_form {
 	background: transparent;
 	padding: 10px !important;
 }
 body {
-	
-	background: #fff;
-	
+    background: #fff;
 }
 
 
@@ -23,8 +27,8 @@ h5.text-light {
   src: url('assets/css/Product Sans Bold.ttf');
 }
 h1{
-   
-	color:#000;
+    font-family :'product sans' !important;
+	color:#000 ;
 	font-size:50px;
 	margin-top:50px;
 	text-align:center;
@@ -51,7 +55,6 @@ h1{
     padding: 15px 0px;
     margin: 0 auto;
     text-align: center;
-	/* background: rgb(33, 150, 243); */
 	background: rgb(78 103 114);
 }
 .resp-tab-item {
@@ -93,7 +96,7 @@ h2.resp-accordion {
    display: block;
 }
 form {
-    background:rgba(3, 3, 3, 0.57);
+    background:whitesmoke !important;
     padding: 25px;
 }
 
@@ -327,7 +330,7 @@ ul#myList{
 form.blackbg{
 	background:rgba(3, 3, 3, 0.57);
 }
-/*-- //load-more --*/
+
 .footer-w3l {
     margin: 50px 0 15px 0;
 }
@@ -343,7 +346,7 @@ form.blackbg{
 .footer-w3l p a:hover{
 	text-decoration:underline;
 }
-/*-- responsive --*/
+
  @media (max-width:1440px){
 	.checkbox {
 		font-size: 0.9em;
@@ -361,7 +364,7 @@ form.blackbg{
 }
  @media (max-width:1080px){
 	h1 {
-		color: #000;
+		color: #fff;
 		font-size: 47px;
 	}
 	.main-agileinfo {
@@ -575,7 +578,7 @@ form.blackbg{
 }
 h1 {
 	font-family: 'product sans';
-    /* font-style: italic; */
+    
     font-size: 40px !important;	
 }	
 </style>
@@ -590,16 +593,15 @@ h1 {
       }
     }
 ?>
-
+ 
 <link rel="stylesheet" type="text/css"
         href="styles%2c_bootstrap4%2c_bootstrap.min.css%2bplugins%2c_font-awesome-4.7.0%2c_css%2c_font-awesome.min.css%2bplugins%2c_OwlCarousel2-2.2.1%2c_owl.carousel.css%2bplugins%2c_OwlCarousel2-2.2.1%2c_owl" />
 	<meta name="keywords" content="Flight Ticket Booking  Widget Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } ;</script>	
 	<div class="main-agileinfo">
-		<h1 class=" brand mt-2">
-					
-		Air Quest</h1>
-		<br>
+		<h1 class="brand mt-2">
+							
+		AirQuest</h1>
 		<div class="sap_tabs">			
 			<div id="horizontalTab">
 				<ul class="resp-tabs-list">
@@ -612,7 +614,7 @@ h1 {
 						<form action="book_flight.php" method="post">
 							<input type="hidden" name="type" value="round">
 							<div class="from">
-								<h3 style="color: rgba(255, 255, 255, 0.767);">From</h3>
+								<h3 style="color: gray;">From</h3>
 								<?php
 								$sql = 'SELECT * FROM cities ';
 								$stmt = mysqli_stmt_init($conn);
@@ -629,7 +631,7 @@ h1 {
 								</select>  
 							</div>
 							<div class="to">
-								<h3 style="color: rgba(255, 255, 255, 0.767);">To</h3>
+								<h3 style="color: gray;">To</h3>
 								<?php
 								$sql = 'SELECT * FROM cities ';
 								$stmt = mysqli_stmt_init($conn);
@@ -648,17 +650,17 @@ h1 {
 							<div class="clear"></div>
 							<div class="date">
 								<div class="depart">
-									<h3 style="color: rgba(255, 255, 255, 0.767);">Depart</h3>
+									<h3 style="color: gray;">Depart</h3>
 									<input class="form-control" name="dep_date" type="date"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
 								</div>
 								<div class="return">
-									<h3 style="color: rgba(255, 255, 255, 0.767);">Return</h3>
+									<h3 style="color: gray;">Return</h3>
 									<input class="form-control"  name="ret_date" type="date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
 								</div>
 								<div class="clear"></div>
 							</div>
 							<div class="class">
-								<h3 style="color: rgba(255, 255, 255, 0.767);">Class</h3>
+								<h3 style="color: gray;">Class</h3>
 								<select id="w3_country1" 
 									name="f_class" onchange="change_country(this.value)" class="frm-field required">
 									<option value="E">Economy</option>  
@@ -669,7 +671,7 @@ h1 {
 							<div class="clear"></div>
 							<div class="numofppl">
 								<div class="adults">
-									<h3 style="color: rgba(255, 255, 255, 0.767);">Passenger</h3>
+									<h3 style="color: gray;">Passenger</h3>
 									<div class="quantity"> 
 										<div class="quantity-select">                           
 											<div class="entry value-minus">&nbsp;</div>
@@ -685,12 +687,12 @@ h1 {
 							<div class="clear"></div>
 							<input type="submit" value="Search Flights" name="search_but">
 						</form>						
-					</div>		
+					</div>		 
 					<div class="tab-1 resp-tab-content oneway">
 						<form action="book_flight.php" method="post">
 							<input type="hidden" name="type" value="one">
 							<div class="from">
-								<h3 style="color: rgba(255, 255, 255, 0.767);">From</h3>								
+								<h3 style="color: gray;">From</h3>								
 								<?php
 								$sql = 'SELECT * FROM cities ';
 								$stmt = mysqli_stmt_init($conn);
@@ -707,7 +709,7 @@ h1 {
 								</select> 														
 							</div>
 							<div class="to">
-								<h3>To</h3>								
+							<h3 style="color: gray;">To</h3>							
 								<?php
 								$sql = 'SELECT * FROM cities ';
 								$stmt = mysqli_stmt_init($conn);
@@ -726,13 +728,13 @@ h1 {
 							<div class="clear"></div>
 							<div class="date">
 								<div class="depart">
-									<h3 style="color: rgba(255, 255, 255, 0.767);">Depart</h3>
+									<h3 style="color: gray;">Depart</h3>
 									<input name="dep_date" type="date" 
 										class="form-control"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
 								</div>
 							</div>
 							<div class="class">
-								<h3 style="color: rgba(255, 255, 255, 0.767);">Class</h3>
+								<h3 style="color: gray;">Class</h3>
 								<select id="w3_country1" name="f_class"
 									onchange="change_country(this.value)" class="frm-field required">
 									<option value="E">Economy</option>  
@@ -743,7 +745,7 @@ h1 {
 							<div class="clear"></div>
 							<div class="numofppl">
 								<div class="adults">
-									<h3 style="color: rgba(255, 255, 255, 0.767);">Passenger</h3>
+									<h3 style="color: gray;">Passenger</h3>
 									<div class="quantity"> 
 										<div class="quantity-select">                           
 											<div class="entry value-minus">&nbsp;</div>
@@ -759,13 +761,13 @@ h1 {
 							<div class="clear"></div>
 							<input type="submit" value="Search Flights" name="search_but">
 						</form>																				
+	</div> 
 	</div>
 	</div>
 	</div>
 	</div>
 	</div>
-	</div>
-	</div>
+
 
     <?php subview('footer.php'); ?> 
 
@@ -794,8 +796,7 @@ h1 {
 			} 
 		});
 		</script>
-								<!--//quantity-->
-						<!--load more-->
+							
 		<script>
 	$(document).ready(function () {
 		size_li = $("#myList li").size();

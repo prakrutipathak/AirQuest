@@ -1,12 +1,13 @@
 <?php include_once 'helpers/helper.php'; ?>
-
+ 
 <?php subview('header.php'); ?>
 <?php if(isset($_SESSION['userId'])) {   
     require 'helpers/conn.php';                      
 ?> 
 <style>
 body {
-  background: #fff;
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
 }
 @font-face {
   font-family: 'product sans';
@@ -26,7 +27,6 @@ p {
     font-family: product sans;
 }
 .alert {
-    /* font-family: 'Courier New', Courier, monospace; */
     font-weight: bold;
 }
 .date {
@@ -55,9 +55,9 @@ h1 {
   }
 
 </style>
-<main>
+<main> 
     <div class="container">
-    <h1 class="text-center mt-4 mb-4">FLIGHT STATUS</h1>
+    <h1 class="text-center text-light mt-4 mb-4">FLIGHT STATUS</h1>
     <?php 
     $stmt_t = mysqli_stmt_init($conn);
     $sql_t = 'SELECT * FROM ticket WHERE user_id=?';

@@ -113,7 +113,7 @@ if(isset($_POST['pay_but']) && isset($_SESSION['userId'])) {
                         mysqli_stmt_bind_param($stmt,'iisisi',$i,
                             $flight_id,$new_seat,$price,$class,$_SESSION['userId']);            
                         mysqli_stmt_execute($stmt);  
-                                 
+                                
                         $flag = true;
                     }                                                                       
                   
@@ -215,7 +215,7 @@ if(isset($_POST['pay_but']) && isset($_SESSION['userId'])) {
                             mysqli_stmt_bind_param($stmt,'iisisi',$i,
                                 $flight_id,$new_seat,$price,$class,$_SESSION['userId']);            
                             mysqli_stmt_execute($stmt);  
-                            // echo mysqli_stmt_error($stmt);           
+                                  
                             $flag = true;
                         }                                                                       
                       

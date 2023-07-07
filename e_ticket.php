@@ -11,7 +11,7 @@ nav {
   src: url('assets/css/Product Sans Bold.ttf');
 }
 h2.brand {
-    /* font-style: italic; */
+ 
     font-size: 27px !important;
 }
 .vl {
@@ -22,7 +22,7 @@ h2.brand {
     color: #d9d9d9;
 }
 h3 {
-    /* font-weight: lighter !important; */
+   
     font-size: 21px !important;
     margin-bottom: 20px;  
     font-family: Tahoma, sans-serif;
@@ -43,10 +43,10 @@ p.txt {
 }
 .bord {
     border: 2px solid lightgray;
-    /* border-left: 0px !important; */
+    
 }
 .out {
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   */
+    
     background-color: white;
     padding-left: 25px;
     padding-right: 0px;
@@ -74,7 +74,7 @@ h1 {
   <?php if(isset($_SESSION['userId'])) {   
     require 'helpers/conn.php';   ?>     
     <div class="container mb-5"> 
-   
+ 
 
       <?php 
     if(isset($_POST['print_but'])) {

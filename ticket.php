@@ -1,13 +1,16 @@
-<?php include_once 'helpers/helper.php'; ?>
+<?php include_once 'helpers/helper.php'; ?> 
 <?php subview('header.php'); ?>
 <style>
 body {
-  background: #fff;
-
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
 }
-
+@font-face {
+  font-family: 'product sans';
+  src: url('assets/css/Product Sans Bold.ttf');
+}
 h2.brand {
-    /* font-style: italic; */
+  
     font-size: 27px !important;
 }
 .vl {
@@ -47,7 +50,6 @@ h2 {
     color: #d9d9d9;
 }
 h3 {
-    /* font-weight: lighter !important; */
     font-size: 21px !important;
     margin-bottom: 20px;  
     font-family: Tahoma, sans-serif;
@@ -61,7 +63,7 @@ h1 {
     font-weight: bolder;
   }
 </style>
-<main>
+<main> 
   <?php if(isset($_SESSION['userId'])) {   
     require 'helpers/conn.php';   
     
@@ -103,7 +105,7 @@ h1 {
     
     ?>     
     <div class="container mb-5"> 
-    <h1 class="text-center mt-4 mb-4">E-TICKETS</h1>
+    <h1 class="text-center text-light mt-4 mb-4">E-TICKETS</h1>
 
       <?php 
       $stmt = mysqli_stmt_init($conn);
@@ -269,6 +271,6 @@ h1 {
        ?> 
 
     </div>
-  </main>
+  </main> 
   <?php } ?>
   <?php subview('footer.php'); ?> 

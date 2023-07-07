@@ -1,4 +1,4 @@
-<?php include_once 'header.php'; ?><!-- log on to codeastro.com for more projects -->
+<?php include_once 'header.php'; ?> 
 <?php include_once 'footer.php'; ?>
 <?php require '../helpers/conn.php'; ?>
 
@@ -20,13 +20,11 @@
     outline: none !important;
   }
   label {
-    /* color : #79BAEC !important; */
+   
     color: #5c5c5c !important;
     font-size: 19px;
   }
   h5.form-name {
-    /* color: cornflowerblue; */
-    /* font-family: 'Courier New', Courier, monospace; */
     font-weight: 50;
     margin-bottom: 0px !important;
     margin-top: 10px;
@@ -37,10 +35,8 @@
     margin-bottom: 20px;  
   }
   body {
-    
-    background-color: #efefef;
-  
-  }
+    background:#fff;
+}
   div.form-out {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
     background-color: whitesmoke !important;
@@ -50,7 +46,7 @@
   select.airline {
     float: right;
     font-weight: bold !important;
-   
+  
   }
   @media screen and (max-width: 900px){
     body {
@@ -77,7 +73,7 @@
           echo "<script>alert('Same city specified in source and destination');</script>";
         }
     }
-    ?><!-- log on to codeastro.com for more projects -->
+    ?> 
       <div class="bg-light form-out col-md-12">
       <h1 class="text-secondary text-center">ADD FLIGHT DETAILS</h1>
 
@@ -88,7 +84,7 @@
           <div class="col-md-3 p-0">
             <h5 class="mb-0 form-name">DEPARTURE</h5>
           </div>
-          <div class="col">    <!-- log on to codeastro.com for more projects -->       
+          <div class="col">            
             <input type="date" name = "source_date" class="form-control"
             required >
           </div>

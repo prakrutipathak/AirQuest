@@ -51,7 +51,7 @@ if(isset($_POST['pass_but']) && isset($_SESSION['userId'])) {
     if(is_null($pass_id)) {
         $pass_id = 0;
         $stmt = mysqli_stmt_init($conn);
-        $sql = 'ALTER TABLE passenger_profile AUTO_INCREMENT = 1 ';
+        $sql = 'ALTER TABLE Passenger_profile AUTO_INCREMENT = 1 ';
         $stmt = mysqli_stmt_init($conn);
         if(!mysqli_stmt_prepare($stmt,$sql)) {
             header('Location: ../pass_form.php?error=sqlerror');

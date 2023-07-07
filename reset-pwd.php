@@ -14,10 +14,8 @@ h1{
 	text-align:center;
 }
 body {
-  background: #bdc3c7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #222D32;
+    font-family: 'Roboto', sans-serif;
 }
 .login-form {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
@@ -48,6 +46,7 @@ body {
         </form>                          
     </div>
 </div>
+
 <?php
 if (isset($_GET['err'])) {
     if ($_GET['err'] === 'invalidemail') {
@@ -60,7 +59,7 @@ if (isset($_GET['err'])) {
 } else if (isset($_GET['mail'])) {
     if ($_GET['mail'] === 'success') {
         echo '<script>alert("Email has been successfully sent to you");</script>';
-}
+    }
 }
 ?>
 <?php subview('footer.php'); ?> 
