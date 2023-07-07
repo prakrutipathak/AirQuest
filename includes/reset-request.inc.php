@@ -51,8 +51,8 @@ if(isset($_POST['reset-req-submit'])) {
         $mail->SMTPSecure = "tls";
         $mail->Port       = 587;
         $mail->Host       = "smtp.gmail.com";
-        $mail->Username   = "snency16@gmail.com";
-        $mail->Password   = "elidpxvbkzqairbg";
+        $mail->Username   = "digique0@gmail.com";
+        $mail->Password   = "ylzmrytoovcrjzqt";
         $mail->IsHTML(true);
         $mail->SetFrom('test@gmail.com');
         $mail->AddAddress($user_email);    
